@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -18,6 +21,10 @@ header {
   display: contents;
 }
 
-ul {
-display: flex;
+body {
+margin: 0;
+padding: 1rem;
 }
+
+
+/* most is done in patent
