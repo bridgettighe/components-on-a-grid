@@ -21,10 +21,34 @@ header {
   display: contents;
 }
 
-body {
-margin: 0;
-padding: 1rem;
+main {
+  display: contents;
 }
 
+body {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin: 0;
+padding: 1rem;
+gap: 1rem;
+}
+
+h2 {
+  font-family: "Patua One", sans-serif;
+  color: #30658d;
+}
+
+ul {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.pano {
+grid-area: banner;
+}
+
+.logo {
+width: 14rem;
+}
 
 /* most is done in patent
