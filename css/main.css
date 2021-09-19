@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia, sans-serif;
   line-height: 1.5;
+    font-family: Georgia, serif;
   color: #000;
   background-color: #f2f1ed;
 }
@@ -26,11 +26,14 @@ main {
 }
 
 body {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-margin: 0;
-padding: 1rem;
-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-areas:
+    "banner banner"
+    "figure figure";
 }
 
 h2 {
@@ -41,14 +44,40 @@ h2 {
 ul {
   display: flex;
   margin-left: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Patua One", sans-serif;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .pano {
-grid-area: banner;
+  grid-area: banner;
 }
 
 .logo {
-width: 14rem;
+  width: 14rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  z-index: 1;
 }
 
-/* most is done in patent
+nav {
+  grid-column: 2/-1;
+  grid-row: 1;
+}
+
+figure {
+  margin: -1rem;
+  padding: 1rem;
+}
